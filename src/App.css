@@ -1,42 +1,48 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Basic reset styles for a cleaner slate */
+body {
+    margin: 0;
+    padding: 0;
   }
-  to {
-    transform: rotate(360deg);
+  
+  header {
+    background-color: #f0f0f0;  /* Change this for your desired background color */
+    padding: 20px 0;
+    display: flex;  /* Enables flexbox for horizontal alignment */
+    justify-content: space-between;  /* Pushes elements to opposite sides */
+    align-items: center;  /* Aligns vertically in this case */
+    display: flex;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  .container {
+    width: 80%;  /* Adjust container width as needed */
+    margin: 0 auto;  /* Centers the container horizontally */
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  
+  .h2 {
+    width: 150px;  /* Adjust logo width as needed */
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  .menu {
+    list-style: none;  /* Removes default bullet points */
+    margin: 0;  /* Removes default margin */
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline-block;  /* Makes menu items inline */
+    margin-right: 20px;  /* Adds space between menu items */
+  }
+  
+  .menu li:last-child {  /* Removes margin from last item */
+    margin-right: 0;
+  }
+  
+  a {
+    text-decoration: none;  /* Removes underline from links */
+    color: #333;  /* Change this for your desired link color */
+  }
+  
