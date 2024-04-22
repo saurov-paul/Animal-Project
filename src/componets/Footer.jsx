@@ -1,7 +1,7 @@
 function Footer () {
     return(
         <footer>
-        <p>Copyright &copy; react24k</p>
+        <p>Copyright &copy; Mr.Paul</p>
         </footer>
     );
 };

@@ -3,8 +3,10 @@ function Header () {
         <header>
   <div className="container">
     <h2>Animals</h2>
+    </div>
+    <div>
     <nav>
-      <ul class="menu">
+      <ul className="menu">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>

@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: white;
+  font-family: "papyrus";
+}
+
+header {
+  background-color: #5F6A6A;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+main{
+  position: relative;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.h2 {
+  width: 150px;
+}
+
+nav {
+  display: flex;
+}
+
+.menu {
+  list-style: none;
+  margin-right: 2rem;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 30px;
+  justify-content: space-between;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.animal {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+  background-color: #5F6A6A;
+  padding-bottom: 10px;
+}
+
+.animal h2 {
+  color: white;
+}
+.animal .removeCard{
+  position: relative;
+  top: 50px;
+  left: 80px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+.animal .removeCard span{
+  font-size: 2rem;
+}
+.animal .removeCard:hover{
+opacity: 1;
+}
+footer {
+  background-color: #5F6A6A;
+  width: 100%;
+  height: 60px;
+}
+footer p {
+  text-align: center;
+  padding-top: 10px;
+}
+
