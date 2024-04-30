@@ -33,3 +33,13 @@ Map the json in an array from the json
 
 
 Connection with GitHub , branches, commit history
+
+
+
+*****task*****
+
+there should be header and foooter
+
+and in the header in logo place name Zoo and in the menu place animal and birds and active class should be work properly
+
+is the fornt page there will be 2 page 1 is animal and 2 is Birds

@@ -1,21 +1,24 @@
-function Header () {
-    return (
-        <header>
-  <div className="container">
-    <h2>Animals</h2>
-    </div>
-    <div>
+import { NavLink } from "react-router-dom";
+
+const Header =() => {
+  return (
+    <header>
+    <h1>Zoo App</h1>
     <nav>
-      <ul className="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul>
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/animals">Animals</NavLink>
+        </li>
+        <li>
+          <NavLink to="/birds">Birds</NavLink>
+        </li>
       </ul>
     </nav>
-  </div>
-</header>
-    )
+    </header>
+  )
 };
 
 export default Header;

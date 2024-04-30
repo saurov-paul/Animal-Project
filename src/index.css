@@ -8,46 +8,102 @@ body {
   background-color: white;
   color: white;
   font-family: "papyrus";
+  width: 100%;
+  height: 100vh;
 }
 
 header {
-  background-color: #5F6A6A;
+  background-color: #5f6a6a;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   display: flex;
 }
-main{
-  position: relative;
-}
-.container {
-  width: 80%;
-  margin: 0 auto;
+
+header {
+  background-color: #2ecc71;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.h2 {
-  width: 150px;
+h1 {
+  margin: 0;
+  font-size: 24px;
 }
 
-nav {
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 
-.menu {
-  list-style: none;
-  margin-right: 2rem;
-  padding: 0;
+nav ul li {
+  margin-right: 20px;
 }
 
-.menu li {
-  display: inline-block;
-  margin-right: 30px;
-  justify-content: space-between;
-}
-
-.menu li:last-child {
+nav ul li:last-child {
   margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.box a {
+  width: 50%;
+}
+
+.box img {
+  border: 2px solid gray;
+  width: 100%;
+  height: 100vh;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with full transparency */
+  }
+  to {
+    opacity: 1; /* Fade in to full opacity */
+  }
+}
+.box .title1 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+  animation: fadeIn 2s ease forwards;
+}
+
+.box .title2 {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+  animation: fadeIn 2s ease forwards;
 }
 
 a {
@@ -58,14 +114,14 @@ a {
   display: inline-block;
   margin: 20px;
   text-align: center;
-  background-color: #5F6A6A;
+  background-color: #5f6a6a;
   padding-bottom: 10px;
 }
 
 .animal h2 {
   color: white;
 }
-.animal .removeCard{
+.animal .removeCard {
   position: relative;
   top: 50px;
   left: 80px;
@@ -73,19 +129,20 @@ a {
   opacity: 0.5;
   transition: opacity 0.2s;
 }
-.animal .removeCard span{
+.animal .removeCard span {
   font-size: 2rem;
 }
-.animal .removeCard:hover{
-opacity: 1;
+.animal .removeCard:hover {
+  opacity: 1;
 }
 footer {
-  background-color: #5F6A6A;
+  position: fixed;
+  bottom: 0px;
+  background-color: #5f6a6a;
   width: 100%;
   height: 60px;
 }
 footer p {
   text-align: center;
-  padding-top: 10px;
+  margin-top: 1.2rem;
 }
-
