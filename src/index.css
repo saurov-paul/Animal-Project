@@ -22,7 +22,7 @@ header {
 }
 
 header {
-  background-color: #2ecc71;
+  background-color: gray;
   color: #ffffff;
   padding: 20px;
   display: flex;
@@ -61,54 +61,29 @@ nav ul li a:hover {
 }
 
 .box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  height: 100vh;
 }
-.box a {
-  width: 50%;
+
+.box > * {
+  border: 1px solid #ccc;
+  padding: 20px;
 }
 
 .box img {
-  border: 2px solid gray;
   width: 100%;
-  height: 100vh;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0; /* Start with full transparency */
-  }
-  to {
-    opacity: 1; /* Fade in to full opacity */
-  }
-}
-.box .title1 {
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
-  animation: fadeIn 2s ease forwards;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire space while maintaining its aspect ratio */
 }
 
-.box .title2 {
-  position: absolute;
-  top: 50%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
-  animation: fadeIn 2s ease forwards;
+.title1 {
+  grid-column: span 2;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+.title2 {
+  grid-column: span 1;
 }
 .animal {
   display: inline-block;

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Cards = ({ name, likes, addLikes, removeCard, removeLikes }) => {
   return (
     <div className="animal">
@@ -25,6 +26,8 @@ const Cards = ({ name, likes, addLikes, removeCard, removeLikes }) => {
               heart_minus
             </span>
           </button>
+          <Link to={name}>See More</Link>
+          
 
         </div>
       </div>
