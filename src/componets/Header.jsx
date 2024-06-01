@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Header =() => {
   return (
     <header>
-    <h1>Zoo App</h1>
+    <NavLink to="/"><h1>Zoo App</h1></NavLink>
     <nav>
       <ul>
         <li>

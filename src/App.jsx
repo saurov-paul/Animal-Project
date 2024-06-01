@@ -27,34 +27,13 @@ function App() {
     }));
   };
 
-  //   const [animalsData,setAnimalsData] = useState(animals)
-
-  //   const removeCard= (animal) =>{
-  // const updateArrya =animalsData.filter(item => item.name !== animal);
-  // setAnimalsData(updateArrya)
-  //   }
-  //   const likesHandler= (animal, action) =>{
-  //     const updateArrya =animalsData.map(item => {
-  //       if(item.name === animal){
-  //         if(action === 'add'){
-  //           return{...item, likes: item.likes + 1}
-  //         }else{
-  //           return{...item, likes: item.likes - 1}
-  //         }
-  //   }
-  //   else{
-  //     return item;
-  //   }
-  // });
-  // setAnimalsData(updateArrya)
-  //   }
 
   const router = createBrowserRouter([
     { path: "/", element: <Home /> },
     {
       path: "/",
       element: <Root />,
-      // errorElement: <ErrorPage />,
+      
       children: [
         {
           path: ":category",
@@ -67,7 +46,7 @@ function App() {
             />
           ),
         },
-        { path: "/:category/:name", element: <singlePage {...zoo} /> },
+        { path: "/:category/:name", element: <SinglePage {...zoo} /> },
         { path: "/About", element: <About /> },
       ],
     },
@@ -75,16 +54,6 @@ function App() {
 
   return (
     <>
-      {/* <Header />
-      <main>
-        {animalsData.map((animal) => {
-          return <Cards key={animal.name} {...animal} 
-          addLikes={likesHandler.bind(this,animal.name, 'add')} 
-          removeLikes={() => likesHandler(animal.name, 'remove')} 
-          removeCard={()=> removeCard(animal.name)}/>;
-        })}
-      </main>
-      <Footer /> */}
       <RouterProvider router={router} />
     </>
   );
