@@ -1,33 +1,37 @@
-# Animal Project
+# Project title
 
-A short description of this project. 
-What it is about, who are target group and why that project was made. 
+The Zoo App is a web application designed for learning purposes. It allows users to explore and learn about animals, birds, fishes, and insects through images and information. The app fetches images from the Unsplash API to create a dynamic and engaging experience.
+
+
+## Features
+
+- Search Functionality: Allows users to search for specific animals, birds, fishes, or insects.
+
+- Category Browsing: Users can browse different categories like animals, birds, fishes, and insects.
+
+- Dynamic Images: The app fetches random images from Unsplash based on the category selected.
+
+- Responsive Design: The app is designed to be responsive and works well on both desktop and mobile devices.
 
 ## Technologies used
 
-Built with: 
+- React: For building the user interface.
 
-- HTML
-- JS
-- CSS
-- Bootstrap
-- Reactjs 
-- ...
+- CSS: For styling the components.
+
+- Unsplash API: For fetching random images related to the categories.
+
+- React Router: For navigation between different pages.
 
 ## Setup and usage
 
-Live page [here](https://github.com/margittennosaar/markdown_study_materials)
+Live page [here](https://saurov-paul.github.io/Animal-Project/)
 
 ## Screenshot
 
+![screenshot](./screenshot.png)
+
 ## Sources 
 
-- [GitHub Guides - masterin markdown](https://guides.github.com/features/mastering-markdown/)
-- [Make a README](https://www.makeareadme.com/)
-
-## Authors and acknowledgment
-
-Margit Tennosaar
-- GitHub @margittennosaar
-- [LinkedIn](https://www.linkedin.com/in/margittennosaar/)
+The site gets all images randomly from https://unsplash.com/
 
